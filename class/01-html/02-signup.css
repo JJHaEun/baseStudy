@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.signup {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid cornflowerblue;
+}
