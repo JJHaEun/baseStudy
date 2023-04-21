@@ -6,43 +6,45 @@
   </head>
   <body>
     <h1>회원가입</h1>
-    <input
-      type="text"
-      placeholder="이메일을 입력해주세요"
-      class="signup"
-    /><br /><br />
-    <input
-      type="text"
-      placeholder="이름을 입력해주세요"
-      class="signup"
-    /><br /><br />
-    <input
-      type="password"
-      placeholder="비밀번호를 입력해주세요"
-      class="signup"
-    /><br /><br />
-    <input
-      type="password"
-      placeholder="비밀번호를 다시 입력해주세요"
-      class="signup"
-    />
-    <br /><br />
-    <select>
+    <section class="profile-section">
+      <input type="text" placeholder="이메일을 입력해주세요" class="signup" />
+      <input type="text" placeholder="이름을 입력해주세요" class="signup" />
+      <input
+        type="password"
+        placeholder="비밀번호를 입력해주세요"
+        class="signup"
+      />
+      <input
+        type="password"
+        placeholder="비밀번호를 다시 입력해주세요"
+        class="signup"
+      />
+    </section>
+    <!-- <select class="select-loc">
       <optgroup>
         <option disabled="true" selected="true">지역을 선택하세요</option>
         <option>서울</option>
         <option>경기</option>
         <option>인천</option>
       </optgroup>
-    </select>
-    <br /><br />
-    <input type="radio" name="gender" /><span>여성</span>
-    <input type="radio" name="gender" /><span>남성</span>
-    <br />
-    <input type="checkbox" />
-    <span>이용약관 개인정보 수집 및... 에 동의 합니다.</span>
-    <hr />
-    <button>가입하기</button>
+    </select> -->
+    <section class="gender-radio-wrap">
+      <p class="gender-wrap">
+        <input class="gender-radio" type="radio" name="gender" /><span
+          >여성</span
+        >
+      </p>
+      <p class="gender-wrap">
+        <input class="gender-radio" type="radio" name="gender" /><span
+          >남성</span
+        >
+      </p>
+    </section>
+    <section class="check-section">
+      <input type="checkbox" class="check" />
+      <span>이용약관 개인정보 수집 및... 에 동의 합니다.</span>
+    </section>
+    <button class="signup-button">가입하기</button>
     <!-- <input type="button" value="가입하기" /> -->
   </body>
 </html>

@@ -1,9 +1,104 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+body {
+  padding: 15px;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  border: 1px solid #aacdff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
 .signup {
   border: none;
   outline: none;
   border-bottom: 1px solid cornflowerblue;
+  /* width: 100%; */
+  min-width: 52vw;
+  height: 8vh;
+}
+/* .select-loc {
+  width: 25vw;
+} */
+.gender-radio-wrap {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 5vh;
+}
+.gender-wrap {
+  display: flex;
+  gap: 10px;
+}
+.gender-radio {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  /* [라디오 버튼 테두리 색상 정의] */
+  border: 1px solid #aacdff;
+  border-radius: 50%;
+  outline: none;
+  /* [라디오 버튼 배경 색상 정의] */
+  background: #ffffff;
+  cursor: pointer;
+}
+.gender-radio::before {
+  /* [content null 설정해서 커스텀 지정] */
+  content: "";
+  display: block;
+  width: 66%;
+  height: 72%;
+  margin: 15% auto;
+  border-radius: 50%;
+}
+.gender-radio:checked:before {
+  /* [라디오 버튼이 클릭 되었을 경우 내부 원형 색상] */
+  background: #aacdff;
+}
+.check {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+
+  /* [라디오 버튼 테두리 색상 정의] */
+  border: 1px solid #aacdff;
+}
+.check::before {
+  /* [content null 설정해서 커스텀 지정] */
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.check:checked:before {
+  /* [라디오 버튼이 클릭 되었을 경우 내부 원형 색상] */
+  content: "✔";
+  background: #aacdff;
+  color: #ffffff;
+  font-size: 13px;
+}
+.signup-button {
+  border: none;
+  outline: none;
+  width: 100%;
+  border: 1px solid #aacdff;
+  max-width: 52vw;
+  margin-left: 2vw;
+  margin-top: 5vh;
+  height: 50px;
+  font-size: 20px;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
 }

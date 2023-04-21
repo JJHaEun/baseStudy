@@ -1,14 +1,27 @@
+* {
+  box-sizing: border-box;
+}
 div {
   width: 80px;
   height: 80px;
   border: 1px solid orange;
   padding: 10px;
 }
-#contentBox {
-  box-sizing: content-box;
-  /* 어. padding 10이네? 공간 싱히좌우 10이 더 필요해 contents는 못움직이니 우리가 공간을 더 추가하자. */
+.pb {
+  width: 500px;
+  height: 500px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  padding: 5vh;
+  align-items: center;
 }
-#borderBox {
-  box-sizing: border-box;
-  /* 어 padding 10이네, 그럼 contents 싱히좌우 10만큼 줄어들어 */
-}
+/* #contentBox { */
+/* box-sizing: content-box; */
+/* 어. padding 10이네? 공간 싱히좌우 10이 더 필요해 contents는 못움직이니 우리가 공간을 더 추가하자. */
+/* } */
+/* #borderBox { */
+/* box-sizing: border-box; */
+/* 어 padding 10이네, 그럼 contents 싱히좌우 10만큼 줄어들어 */
+/* } */
