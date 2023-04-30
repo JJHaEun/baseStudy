@@ -31,7 +31,7 @@ body {
   width: 100%;
 
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 0px 12px 5px 12px;
   flex-direction: row;
   align-items: center;
