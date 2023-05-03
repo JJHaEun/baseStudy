@@ -138,6 +138,7 @@ body {
 .bonus {
   position: absolute;
   top: 3em;
+  left: 6em;
   display: flex;
   flex-direction: row;
   align-items: center;
