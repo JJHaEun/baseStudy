@@ -44,6 +44,7 @@ const onClickLotto = () => {
   bonusNumber.className = "ball";
   bonusNumber.textContent = bonus;
   bonusBall.appendChild(bonusNumber);
-
-  document.getElementById("lotto_picker").disabled = true;
+  setTimeout(() => {
+    document.getElementById("lotto_picker").disabled = true;
+  }, 500);
 };
