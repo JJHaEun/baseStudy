@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup 이벤트 변경 감지</title>
+    <script src="./06-signup.js"></script>
+  </head>
+  <body>
+    <!--  input이 변경이 될때마다 지정한 함수를 호출하기 위해 oninput이라는 속성을 사용! -->
+    <input type="text" id="email" oninput="checkValidation()" />
+    <input type="text" id="password1" oninput="checkValidation()" />
+    <input type="text" id="password2" oninput="checkValidation()" />
+    <button id="submit" disabled="true">회원가입</button>
+  </body>
+</html>
