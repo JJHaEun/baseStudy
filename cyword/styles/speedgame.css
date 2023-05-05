@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#screen {
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  user-select: none;
+  padding: 10%;
+}
+#screen.wait {
+  background-color: rgb(86, 148, 218);
+}
+#screen.ready {
+  background-color: rgb(247, 237, 55);
+}
+#screen.now {
+  background-color: rgb(91, 211, 51);
+}
