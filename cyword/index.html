@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/386abbce51.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </head>
   <body>
     <div class="background">
@@ -61,8 +62,17 @@
               <div class="right_header_setting">사생활보호설정</div>
             </section>
             <section class="wrap_right_body">
-              <iframe src="./speedgame.html"></iframe>
+              <iframe id="contents_frame" src="./home.html"></iframe>
             </section>
+          </section>
+          <section class="navigation">
+            <div class="navigation_item" id="home" onclick="menuHome()">홈</div>
+            <div class="navigation_item" id="game" onclick="menuGame()">
+              게임
+            </div>
+            <div class="navigation_item" id="speed" onclick="menuSpeedGame()">
+              스피드게임
+            </div>
           </section>
         </section>
       </section>
