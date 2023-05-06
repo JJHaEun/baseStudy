@@ -22,6 +22,7 @@ body {
   text-align: center;
   user-select: none;
   padding: 10%;
+  cursor: pointer;
 }
 #screen.wait {
   background-color: rgb(86, 148, 218);
