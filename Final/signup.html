@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp-Final</title>
+    <script src="./signup.js"></script>
+    <link href="./signup.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="mainwrap">
+      <h1>코드캠프 회원가입</h1>
+      <section class="main">
+        <section class="info">
+          <input
+            type="text"
+            class="email_input"
+            id="email"
+            oninput="checkValidation()"
+            placeholder="이메일을 입력해주세요"
+          />
+          <input
+            type="text"
+            class="name_input"
+            id="name"
+            oninput="checkValidation()"
+            placeholder="이름을 입력해 주세요"
+          />
+          <input
+            type="password"
+            class="password"
+            id="password"
+            placeholder="비밀번호를 입력해 주세요"
+            oninput="checkValidation()"
+          />
+          <input
+            type="password"
+            class="passwordchek"
+            id="passwordchek"
+            placeholder="비밀번호를 다시 입력해 주세요."
+            oninput="checkValidation()"
+          />
+        </section>
+        <section class="phone_info">
+          <input
+            type="text"
+            maxlength="3"
+            id="phone1"
+            oninput="changeFocus()"
+          />
+          -
+          <input
+            type="text"
+            maxlength="4"
+            id="phone2"
+            oninput="changeFocus2()"
+          />
+          -
+          <input
+            type="text"
+            maxlength="4"
+            id="phone3"
+            oninput="chageDisables()"
+          />
+        </section>
+        <section class="number_group">
+          <div class="numbers">
+            <span id="random_number">000000</span>
+            <button
+              id="send_number"
+              disabled="true"
+              onclick="sendRandomNumber()"
+            >
+              인증번호 전송
+            </button>
+          </div>
+          <div class="numbers">
+            <span id="timer">3:00</span>
+            <button id="stoptimer" disabled="true" onclick="checkOk()">
+              인증확인
+            </button>
+          </div>
+        </section>
+        <section class="select_group">
+          <select class="select-loc">
+            <optgroup>
+              <option disabled="true" selected="true">지역을 선택하세요</option>
+              <option>서울</option>
+              <option>인천</option>
+              <option>경기</option>
+            </optgroup>
+          </select>
+          <div class="gender_radio_gruop">
+            <p class="gender-wrap">
+              <input class="gender-radio" type="radio" name="gender" /><span
+                >여성</span
+              >
+            </p>
+            <p class="gender-wrap">
+              <input class="gender-radio" type="radio" name="gender" /><span
+                >남성</span
+              >
+            </p>
+          </div>
+        </section>
+        <section class="signup_button_wrap">
+          <button id="signup_button" disabled="true">가입하기</button>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

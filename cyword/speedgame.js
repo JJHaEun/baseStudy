@@ -20,7 +20,10 @@ const startGame = () => {
   } else if (screen.classList.contains("now")) {
     // 시작
     endTime = new Date();
-    result.textContent = `현재: ${endTime - startTime}ms`;
+    // result.textContent = `현재: ${endTime - startTime}ms`;
+    const current = endTime - startTime;
+
+    result.textContent = `현재: ${current}`;
     screen.classList.replace("now", "wait");
 
     screen.innerText = "클릭해서 시작하세요!!";
