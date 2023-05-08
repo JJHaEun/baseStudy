@@ -153,3 +153,9 @@ h1 {
 .signup_button_wrap button:disabled {
   cursor: default;
 }
+#timer {
+  color: #0068ff;
+}
+#random_number {
+  color: #0068ff;
+}

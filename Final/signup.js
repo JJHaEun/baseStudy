@@ -86,4 +86,6 @@ const checkOk = () => {
   isStarted = false;
   document.getElementById("stoptimer").disabled = true;
   clearInterval(timerIn);
+  alert("인증이 완료되었습니다");
+  document.getElementById("stoptimer").innerText = "인증완료";
 };
